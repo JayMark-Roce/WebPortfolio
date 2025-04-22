@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- nav icons -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- loading icom -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">     <!-- fonts -->
+     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- gallery design -->
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -10;"></div>
+    <div class="ufo ufo1"><div class="beam"></div></div>
+    <div class="ufo ufo2"><div class="beam"></div></div>
+    <div class="ufo ufo3"><div class="beam"></div></div>
+    <nav class="navbar">
+      <div class="burger" onclick="toggleMenu()">
+          <span class="burger-icon"><i class="fas fa-bars"></i></span>
+          <span class="close-icon" style="display: none;"><i class="fas fa-times"></i></span>
+        </div>
+        
+
+  <ul class="topnav" id="navMenu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="quizzes.html"><i class="fas fa-clipboard-list"></i> Quizzes</a></li>
+      <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li class="right"><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+  </ul>
+  </nav>
+
+      <main class="main-padding">
+        
+
+        <h1 class="gallery-heading">🪐About Me 🪐</h1>
+        <p class="subtext slide-up">A visual archive of the stars I've collected 💫</p>    
+
+
+        <div class="grid-container1">
+           <div class="bio">
+
+                <p class="slide-up">Hey! I’m <b>Jay Mark Roce</b>, a tech enthusiast and web development student who loves bringing ideas to life on the screen. 
+                    I’m all about building clean, responsive websites and learning something new with every project. 
+                    When I’m not tweaking code or styling pages, I’m probably diving into a good sci-fi flick or staring up at the 
+                    stars wondering what’s next—both in the galaxy and in my coding journey. </p>
+
+            </div>
+        </div>
+
+
+
+        <br>
+
+        <div class="grid-container2">
+
+            <div class="experince">
+              <h1 class="portfolio slide-up">My Experiences</h1>
+
+                <div class="experience-card">
+                  <h3>🌠 Education</h3>
+                  <p><strong>2009 - Present</strong></p>
+                  <p>I am currently a student studying in Cavite State University Silang Campus and I am currently a Third Year
+                    student. I graduated Elementary in the year 2016 and Highschool in the year 2022.
+                  </p>
+                </div>
+              
+                <div class="experience-card">
+                  <h3>👨‍🚀 IT Student - Still Learning</h3>
+                  <p><strong>2022 – Present</strong></p>
+                  <p>Currently learning the secrets of the web universe—HTML, CSS, JavaScript, and the magic behind making websites look and feel awesome.</p>
+                </div>
+            
+            </div>
+
+            <div class="skills">
+              <h1 class="portfolio slide-up">Details about Me</h1>
+
+                <div class="experience-card">
+                  <h3>🌠 Hobbies</h3>
+                  <p><strong>Things I do when I am not busy</strong></p>
+                  <p> I’ve always had a thing for understanding how things work—from gadgets to galaxies. 
+                    When I'm not coding up something cool or debugging like a digital detective, you’ll probably 
+                    find me immersed in sci-fi movies and anime.</p>                
+                  </div>
+              
+                <div class="experience-card">
+                  <h3>👨‍🚀 Passion</h3>
+                  <p><strong>My goals</strong></p>
+                  <p>I’m passionate about crafting responsive, visually striking websites and continuously leveling up my skills in development 
+                    and design. Oh, and I believe coffee is basically a developer's potion of productivity.</p>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <h2 style="color: #8904aa; font-size: 2em; text-align: center; margin-bottom: 30px;">Mini Gallery</h2>
+
+                <div class="gallery-grid">
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  <div class="gallery-item"><img src="images/me.png" alt="Photo 1"></div>
+                  
+                </div>
+
+            </div>
+            
+            <div  id="contact" class="contact-section invitation">
+                <h2>🌌 Let’s Build Something Cosmic</h2>
+                <p>The universe is vast, but somehow... you found this portfolio. Fate? Coincidence? Let’s find out. 🛸</p>
+                <a href="mailto:sc.jaymark.roce @gmail.com" class="cta-button">Send Me a Message</a>
+            </div>
+
+        </div>
+
+      </main>
+
+
+      <!-- loading -->
+      <div id="loadingOverlay" class="loading-overlay">
+        <p class="loading-text">Buckle up, launching...</p>
+      
+        <div class="rocket-bar">
+          <svg class="rocket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="white" d="M505 19.1c-4.6-4.6-11.7-5.7-17.4-2.9L321.2 94.3 229.1 186.5c-6.2 6.2-10.7 13.6-13.4 21.6L201 247.2l-56.3 56.3c-3.3 3.3-4.8 8-3.8 12.5l12.7 55.2-91.2 91.2c-4.7 4.7-4.7 12.3 0 17l34 34c4.7 4.7 12.3 4.7 17 0l91.2-91.2 55.2 12.7c4.5 1 9.2-.4 12.5-3.8l56.3-56.3 39.1-14.6c8-3 15.4-7.5 21.6-13.7l92.2-92.2 78.1-166.3c2.7-5.7 1.6-12.7-3-17.3zM143.9 368.1l-8.1-35.1 43.3-43.3 22.1 22.1-43.3 43.3-14 12.9zm131.3 25.2l-35.1-8.1-12.9-14 43.3-43.3 22.1 22.1-17.4 43.3zm151.5-151.5l-20.1 20.1-78.9-78.9 20.1-20.1 78.9 78.9z"/>
+          </svg>
+        </div>
+      </div>
+      
+
+
+
+
+
+      <footer class="footer">
+        <p>👽 Made by Jay – Powered by stardust and HTML.</p>
+      </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
