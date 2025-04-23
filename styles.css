@@ -519,7 +519,7 @@ ul.topnav.beam-out {
   justify-content: center;
   align-items: center;
   aspect-ratio: 1 / 1; /* Keeps it square-ish for balance */
-  box-shadow: 0 0 15px #7f00ff, 0 0 25px #550c7c;
+
   border-radius: 20px; /* optional: gives it soft corners */
   transition: all 0.3s ease;
 }
@@ -608,7 +608,7 @@ ul.topnav.beam-out {
 @media screen and (max-width: 600px) {
   /* Ensure the container fits the screen and allows overflow if needed */
   .photo-container {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     overflow: hidden;
     display: flex;
@@ -621,8 +621,8 @@ ul.topnav.beam-out {
 
   /* Adjust image styles for mobile */
   .photo {
-    width: 80%; /* Adjust image width to 80% of the container width */
-    height: 80%; /* Maintain aspect ratio */
+    width: 70%; /* Adjust image width to 80% of the container width */
+    height: 70%; /* Maintain aspect ratio */
     position: relative;
 
   }
@@ -929,7 +929,7 @@ ul.topnav.beam-out {
 
 .stat-box .stat-glow {
   color: #00ffcc;
-  text-shadow: 0 0 6px #00ffcc;
+  text-shadow: 0 0 6px #8a06a8;
   font-weight: bold;
 }
 
