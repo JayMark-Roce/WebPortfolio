@@ -35,20 +35,95 @@
       <li class="right"><a href="about.html"><i class="fas fa-user"></i> About</a></li>
   </ul>
   </nav>
+  <main class="main-padding">
+        
 
       <h1 class="gallery-heading">🪐 Quiz Constellation 🪐</h1>
-      <p class="subtext slide-up">A visual archive of the stars I've collected 💫</p>    
+      <p class="subtext slide-up">Click the Images for better view 💫</p>    
 
       <div class="quiz-gallery">
-        <img src="images/quiz.png" alt="Quiz 1">
-        <img src="images/quiz.png" alt="Quiz 1">
-        <img src="images/quiz.png" alt="Quiz 1">
-        <img src="images/quiz.png" alt="Quiz 1">
-        <img src="images/quiz.png" alt="Quiz 1">
-        <img src="images/quiz.png" alt="Quiz 1">
-        <!-- Add more quiz images here -->
-      </div>
 
+        <div class="quiz-item">
+          <img src="images/quiz.png" alt="Quiz 1" class="popup-img">
+          <p class="details">PRE-TEST 1</p>
+        </div>
+        
+        
+        <div class="quiz-item">
+          <img src="images/PRE2.png" alt="Quiz 2" class="popup-img">
+            <p class="details">PRE-TEST 2</p>
+        </div>
+      
+        <div class="quiz-item">
+          <img src="images/PRE3.png" alt="Quiz 3" class="popup-img">
+            <p class="details">PRE-TEST 3</p>
+        </div>
+
+        <div class="quiz-item">
+          <img src="images/PRE4.png" alt="Quiz 4" class="popup-img">
+            <p class="details">PRE-TEST 4</p>
+        </div>
+
+        <div class="quiz-item">
+          <img src="images/PRE5.png" alt="Quiz 5" class="popup-img">
+            <p class="details">PRE-TEST 5</p>
+        </div>
+
+
+        <div class="quiz-item">
+          <img src="images/pt1.png" alt="Quiz 1" class="popup-img">
+          <p class="details">POST-TEST 1</p>
+        </div>
+        
+        
+        <div class="quiz-item">
+          <img src="images/pt2.png" alt="Quiz 2" class="popup-img">
+            <p class="details">POST-TEST 2</p>
+        </div>
+      
+        <div class="quiz-item">
+          <img src="images/pt3.png" alt="Quiz 3" class="popup-img">
+            <p class="details">POST-TEST 3</p>
+        </div>
+
+        <div class="quiz-item">
+          <img src="images/pt4.png" alt="Quiz 4" class="popup-img">
+            <p class="details">POST-TEST 4</p>
+        </div>
+
+        <div class="quiz-item">
+          <img src="images/pt5.png" alt="Quiz 5" class="popup-img">
+            <p class="details">POST-TEST 5</p>
+        </div>
+
+        <div class="quiz-item">
+        </div>
+
+        <div class="quiz-item">
+        </div>
+
+        <div class="quiz-item">
+          <img src="images/MIDTERM.png" alt="MIDTERM" class="popup-img">
+            <p class="details">MIDTERM EXAM</p>
+        </div>
+
+        <div class="quiz-item">
+        </div>
+        
+        <div class="quiz-item">
+        </div>
+      
+        <!-- Add more quiz images here as needed -->
+      </div>
+      <div class="quiz-item">
+  <p class="click-text" data-img="images/quiz.png"></p>
+</div>
+      
+<!-- Lightbox popup -->
+<div id="image-popup" class="popup">
+  <span class="close-btn">&times;</span>
+  <img class="popup-content" id="popup-image">
+</div>
 
       <!-- loading -->
       <div id="loadingOverlay" class="loading-overlay">
@@ -60,10 +135,50 @@
           </svg>
         </div>
       </div>
+  </main>
       
+  <footer class="footer">
+    <p>👽 Made by Jay – Powered by stardust and HTML.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GviZTX4K5/?mibextid=wwXIfr" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com/@seishirroooo?_t=ZS-8vvoXTNGLLR&_r=1" target="_blank" class="social-icon">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://github.com/JayMark-Roce" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="script.js"></script>
+
+
+<script>
+  const popup = document.getElementById("image-popup");
+  const popupImg = document.getElementById("popup-image");
+  const closeBtn = document.querySelector(".close-btn");
+
+  document.querySelectorAll(".popup-img").forEach(img => {
+    img.addEventListener("click", () => {
+      popup.style.display = "flex";
+      popupImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  // Close if clicked outside the image
+  popup.addEventListener("click", e => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+</script>
 
 
 </body>
